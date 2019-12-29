@@ -1,5 +1,11 @@
+/*
+    Theme Name: Moderna
+    Theme URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
 
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
@@ -328,7 +334,7 @@ ul.nav li.dropdown a {
 }
 
 .flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
-.flex-caption { bottom: 35px; background-color: rgba(0, 0, 0, 0.8); color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; right: 0; width: 295px;}
+.flex-caption { bottom: 35px; background-color: rgba(0, 0, 0, 0.8); color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; right: 45px; width: 295px;}
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
 .flex-caption p {margin: 0 0 15px;}
 
@@ -515,19 +521,35 @@ form#contactform .validation {
 	font-size:11px;
 }
 
-#sendmessage {
-	border:1px solid #e6e6e6;
-	background:#f6f6f6;
-	display:none;
-	text-align:center;
-	padding:15px 12px 15px 65px;
-	margin:10px 0;
-	font-weight:600;
-	margin-bottom:30px;
-
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
 }
 
-#sendmessage.show,.show  {
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
 	display:block;
 }
 
@@ -850,18 +872,10 @@ footer .widget .social-network {
 	margin-bottom:40px;
 }
 
-.map iframe{
-	width:100%;
-	height:450px;
-	border:none;
-}
-
-.map-grid iframe{
-	width:100%;
-	height:350px;
-	border:none;
-	margin:0 0 -5px 0;
-	padding:0;
+/* google map */
+#google-map{
+    position:relative;
+    height: 450px;
 }
 
 /* --- our team --- */
